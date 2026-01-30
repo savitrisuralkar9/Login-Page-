@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #0b1c2d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.title span {
+  color: #8aff4f;
+}
+
+.scene {
+  position: relative;
+  width: 900px;
+  height: 400px;
+  background: #8c8cff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Girl */
+.girl {
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  width: 180px;
+  cursor: grab;
+}
+
+/* Login box */
+.login-box {
+  position: absolute;
+  left: -400px;   /* start from left */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  transition: left 1s ease;
+}
+
+.login-box h2 {
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
